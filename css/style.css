@@ -47,7 +47,7 @@ div.desc
 }
 .social-icons a
 {   
-    margin-left: 25px;
+  margin-left: 25px;
 	display: inline-block;
 	width: 36px;
 	height: 36px;
@@ -66,22 +66,26 @@ div.desc
 {
 	background: #e91e63;
 }
-.text 
+.text
+  {
+    margin-top:17px;
+    margin-left:35%;
+    color: red;
+  }
+.text:hover
 {
-    margin:16px;
-    font: oblique;
+  color:white;
 }
-.text a
-{
-    color:red;
-}
-.menu 
+
+/*---navigator---*/
+.nav-menu 
 {
     list-style: none;
     overflow: hidden;
     background-color:black;
 }
-.menu li {
+.li-menu a {
+    color:red;
     float: left;
     display:block;
     text-align: center;
@@ -89,19 +93,16 @@ div.desc
     text-decoration: none;
     font-size: 17px;
   }
-.menu li a
+.li-menu  a:hover
 {
-  color:red;
+  background: #ccc;
+  color:black;
 }
-.menu li a:hover
-{
-color:white;
-}
-.menu .search-box {
+.nav-menu .search-box {
     float: right;
   }
 
-.menu input[type=text] {
+.nav-menu input[type=text] {
     padding: 6px;
     margin-top: 8px;
     font-size: 17px;
@@ -116,11 +117,11 @@ color:white;
     border: none;
     cursor: pointer;
   }
-  .menu .search-btn
+  .nav-menu .search-btn
   {
       color:red;
   }
-  .menu .search-btn:hover
+  .nav-menu .search-btn:hover
   {
       color:white;
   }
@@ -129,7 +130,7 @@ color:white;
  .search-box {
       float: none;
     }
-    .menu a, .menu input[type=text], .menu .search-box .search-btn {
+    .nav-menu a, .nav-menu input[type=text], .nav-menu .search-box .search-btn {
       float: none;
       display: block;
       text-align: left;
@@ -137,9 +138,10 @@ color:white;
       margin: 0;
       padding: 14px;
     }
-    .menu input[type=text] {
+    .nav-menu input[type=text] {
       border: 1px solid #ccc;  
     }
   }
+/*----navigator_end----*/
 
- 
+
