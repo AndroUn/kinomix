@@ -74,7 +74,7 @@ div.desc
   }
 .text:hover
 {
-  color:white;
+  color: #ccc;
 }
 
 /*---navigator---*/
@@ -95,8 +95,7 @@ div.desc
   }
 .li-menu  a:hover
 {
-  background: #ccc;
-  color:black;
+  color: #ccc;
 }
 .nav-menu .search-box {
     float: right;
@@ -123,7 +122,7 @@ div.desc
   }
   .nav-menu .search-btn:hover
   {
-      color:white;
+      color:#ccc;
   }
 
   @media screen and (max-width: 600px) {
@@ -144,4 +143,81 @@ div.desc
   }
 /*----navigator_end----*/
 
+/*-----form----*/
+.open-button
+{
+  background-color:black;
+  color:red;
+  float: left;
+  display:block;
+  text-align: center;
+  padding: 11px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border:none;
+ 
+}
 
+.open-button:hover
+{
+  color:#ccc;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  top:300px;
+  margin-left:30%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container h1
+{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color:rgb(24,33,52,0.7);
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid darkgrey;
+  background: #f1f1f1;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container .cancel {
+  background-color: red;
+}
+
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+/*-----formEnd----*/
