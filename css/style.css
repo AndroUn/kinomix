@@ -1,7 +1,8 @@
 * {box-sizing: border-box;}
 body
 {
-    background:grey;
+   background:url("https://hota.com.au/wp-content/uploads/2018/07/HOTA_Cinema_Timetable_1600x840px.jpg") 100%;
+   background-size:cover;
 }
 a { 
     text-decoration: none;
@@ -14,27 +15,56 @@ a {
     max-width:80%;
 }
 .afisha {
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
     background-color: #ccc;
   }
 div.poster
-{ margin:15px;
-  float: left;
-  width: 14%;
+{ 
+  padding:2px;
+  margin:auto;
+  margin-bottom: 20px;
+  margin-top:20px;
+  width: 17%;
   border: 1px solid darkgrey;
 }
 div.poster img
-{
+{ 
   width: 100%;
   height: auto;
 }
 div.desc
 {
   color:black;
-  padding:15px;
+  padding:20px;
   text-align: center;
 }
+@media screen and (max-width: 600px){
+    div.poster
+    { 
+      padding:2px;
+      margin:auto;
+      margin-bottom: 10px;
+      margin-top:10px;
+      width: 40%;
+      border: 1px solid darkgrey;
+    }
+  }
+  .social-icons
+   {
+    margin:5px;
+    padding:0;
+    margin-left:5%;
+   }
+   .social-icons a
+   {
+     margin-left:3px;
+   }
+   .text
+   {
+     margin-top:12px;
+     margin-left:23%;
+   }
 .footer
 {
    display: flex;
@@ -45,6 +75,7 @@ div.desc
     padding: 10px;
     margin-left:40%;
 }
+
 .social-icons a
 {   
   margin-left: 25px;
@@ -65,7 +96,8 @@ div.desc
 .social-icons a:hover 
 {
 	background: #e91e63;
-}
+} 
+
 .text
   {
     margin-top:17px;
@@ -76,6 +108,33 @@ div.desc
 {
   color: #ccc;
 }
+
+@media screen and (max-width: 1300px){
+.social-icons
+ {
+  padding: 10px;
+  margin-left:20%;
+ }
+}
+@media screen and (max-width: 720px){
+  .social-icons
+   {
+    margin:5px;
+    padding:0;
+    margin-left:5%;
+   }
+   .social-icons a
+   {
+     margin-left:3px;
+   }
+   .text
+   {
+     margin-top:12px;
+     margin-left:23%;
+   }
+  }
+
+
 
 /*---navigator---*/
 .nav-menu 
@@ -111,7 +170,7 @@ div.desc
     float: right;
     padding:6px 10px;
     margin-top: 8px;
-    margin-right: 16px;
+    margin-right: 5px;
     font-size: 17px;
     border: none;
     cursor: pointer;
@@ -125,23 +184,37 @@ div.desc
       color:#ccc;
   }
 
+@media screen and (max-width: 1050px)
+ {
+  .nav-menu input[type=text], .search-box  .search-btn
+   {
+      margin-bottom:5px;
+      padding:5px;
+   }
+}
   @media screen and (max-width: 600px) {
- .search-box {
-      float: none;
+    .search-box
+    {
+      float: left;
+      width:100%;
     }
-    .nav-menu a, .nav-menu input[type=text], .nav-menu .search-box .search-btn {
+    .nav-menu a, .nav-menu input[type=text], .nav-menu  .search-box  .search-btn {
       float: none;
       display: block;
       text-align: left;
       width: 100%;
       margin: 0;
-      padding: 14px;
+      padding:14px;
     }
     .nav-menu input[type=text] {
       border: 1px solid #ccc;  
     }
   }
 /*----navigator_end----*/
+
+
+
+
 
 /*-----form----*/
 .open-button
@@ -155,9 +228,8 @@ div.desc
   text-decoration: none;
   font-size: 17px;
   border:none;
- 
-}
-
+  margin:0;
+ }
 .open-button:hover
 {
   color:#ccc;
@@ -167,7 +239,7 @@ div.desc
   position: fixed;
   top:300px;
   margin-left:30%;
-  border: 3px solid #f1f1f1;
+  border: 3px solid #06103b;
   z-index: 9;
 }
 
