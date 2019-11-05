@@ -237,12 +237,18 @@ div.desc
 .form-popup {
   display: none;
   position: fixed;
-  top:300px;
+  top:100px;
   margin-left:30%;
   border: 3px solid #06103b;
   z-index: 9;
 }
-
+@media screen and (max-width: 600px)
+{
+  .form-popup
+  {
+    margin:auto;
+  }
+}
 .form-container h1
 {
   font-size: 30px;
@@ -274,7 +280,7 @@ div.desc
 
 .form-container .btn {
   background-color: #4CAF50;
-  color: white;
+  color:#100433;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
@@ -291,5 +297,20 @@ div.desc
 
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
+}
+.reg-button
+{ 
+  background-color:#e0e063;
+  color: #100433;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.reg-button:hover
+{
+  opacity:1;
 }
 /*-----formEnd----*/
