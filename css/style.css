@@ -21,12 +21,16 @@ a {
   }
 div.poster
 { 
+  width:17%;
   padding:2px;
   margin:auto;
   margin-bottom: 20px;
   margin-top:20px;
-  width: 17%;
   border: 1px solid darkgrey;
+}
+div.poster:hover
+{
+  border-color: #5450a3;
 }
 div.poster img
 { 
@@ -214,6 +218,15 @@ div.desc
     .nav-menu input[type=text] {
       border: 1px solid #ccc;  
     }
+  }
+  .ul-dropdown
+  {
+    position:relative;
+    display:none;
+  }
+  .li-menu:hover>.ul-dropdown
+  {
+    display:block;
   }
 /*----navigator_end----*/
 
