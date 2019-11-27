@@ -11,3 +11,14 @@ function openReg() {
 function closeReg() {
   document.getElementById("myReg").style.display = "none";
 }
+
+function ValidateForm()
+{
+  var x = myForm.getElementById("email").value;
+  var p =x.lastIndexOf("@");
+  if ( p==-1 ) {
+    myForm.getElementById("demo").innerHTML="no";
+    return false;
+  }
+}
+

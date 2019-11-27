@@ -107,26 +107,25 @@
         </div>
 
         <div class="form-popup" id="myForm">
-            <form  class="form-container">
+            <form  class="form-container" onsubmit=" return ValidateForm()">
               <h1>Login</h1>
-        
-              <input type="text" placeholder="Email" name="email" required>
-              <input type="password" placeholder="პაროლი" name="psw" required>
-              <button class="reg-button" onclick="openReg()">Registracion</button>
-              <button type="submit" class="btn" href="#">Login</button>
+              <input type="text" placeholder="Email" name="email" id="email">
+              <p id="demo"></p>
+              <input type="password" placeholder="პაროლი" name="psw">
+              <button type="submit" class="btn" value="submit">Login</button>
               <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              <button class="reg-button" onclick="openReg()">Registracion</button>
             </form>
         </div>
         <div class="form-popup" id="myReg">
             <form  class="form-container">
               <h1>Registracion</h1>
-              <input type="text" placeholder="Email" name="email" required>
-              <input type="text" placeholder="სახელი" name="username" required>
+              <input  type="text" placeholder="Email" name="email">
+              <input type="text" placeholder="სახელი" name="username">
               <input type="password" placeholder="პაროლი" name="psw">
               <input type="password" placeholder="გაიმეორეთ პაროლი" name="psw">
-              <input type="text" placeholder="ქალაქი" name="town" required>
-              <input type="datetime-local" placeholder="registraciis tarigi" თარიღი" name="datetime">
-              <button type="submit" class="btn">Login</button>
+              <input type="text" placeholder="ქალაქი" name="town">
+              <button type="submit" class="btn">Registrate</button>
               <button type="button" class="btn cancel" onclick="closeReg()">Close</button>
             </form>
         </div>
