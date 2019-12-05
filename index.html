@@ -17,19 +17,23 @@
             <div class="wrapper">
                     <div class="slides">
                         <img class="slides-item" src="img/1.jpg" alt="j">
-                        <img class="slides-item" src="img/2.jpg" alt="k">
-                        <img class="slides-item" src="img/3.jpg" alt="p">
+                        <img class="slides-item" src="img/4.jpg" alt="k">
+                        <img class="slides-item" src="img/5.jpg" alt="p">
+                        <img class="slides-item" src="img/2.jpg" alt="w">
+                        <img class="slides-item" src="img/3.jpg" alt="t">
                     </div>
-                    <div class="button-block">
-                        <div id="left-button">&#10094</div>
-                        <div id="right-button">&#10095</div>
-                    </div>
+                    
+                        <a class="prev" onclick="minusSlide()">&#10094</a>
+                        <a class="next" onclick="plusSlide()">&#10095</a>
+                    
                     <div class="dots-block">
-                        <div class="dots-item active"></div>
-                        <div class="dots-item"></div>
-                        <div class="dots-item"></div>
+                        <span class="dots-item active" onclick="currentSlide(1)"></span>
+                        <span class="dots-item" onclick="currentSlide(2)"></span>
+                        <span class="dots-item" onclick="currentSlide(3)"></span>
+                        <span class="dots-item" onclick="currentSlide(4)"></span>
+                        <span class="dots-item" onclick="currentSlide(5)"></span>
                     </div>
-                </div>
+                    </div>
         <nav class="nav-menu">
             <ul class="ul-menu">
                 <li class="li-menu"><a class="a-menu" href="index.html">მთავარი</a></li>
@@ -85,9 +89,9 @@
             </div>
             <div class="poster">
                 <a target="_blank" href="#">
-                    <img src="https://cdn.europosters.eu/image/750/posters/fast-furious-presents-hobbs-shaw-cast-i80306.jpg"
-                        alt="Hobs&Show">
-                    <div class="desc">Hobs&Show</div>
+                    <img src="https://pbs.twimg.com/media/EJJEaPkW4AAaedw.jpg"
+                        alt="fvf">
+                    <div class="desc">Ford vs Ferrari</div>
                 </a>
             </div>
             <div class="poster">
