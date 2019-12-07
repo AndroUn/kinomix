@@ -51,3 +51,7 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+var x = document.getElementById('email').value;
+var y = /^[a-zA-Z0-9]{1,}@[a-zA-Z0-9]{1,}.[a-z]{2,10}$/;
+x.match(y);
