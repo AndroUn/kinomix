@@ -144,13 +144,15 @@
         <div class="form-popup" id="myReg">
             <form class="form-container">
                 <h1>Registracion</h1>
-                <input type="text" placeholder="Email" name="email" id="email">
-                <p id="demo"></p>
+                <input type="text" placeholder="Email" name="email" id="email" oninput="validateEmail()">
+                <p id="d1"></p>
                 <input type="text" placeholder="სახელი" name="username">
-                <input type="password" placeholder="პაროლი" name="psw">
-                <input type="password" placeholder="გაიმეორეთ პაროლი" name="psw">
+                <input type="password" placeholder="პაროლი" name="psw" id="psw" oninput="validatePass()">
+                <p id="d2"></p>
+                <input type="password" placeholder="გაიმეორეთ პაროლი" name="psw" id="psw2">
+                <p id="d3"></p>
                 <input type="text" placeholder="ქალაქი" name="town">
-                <button type="button" class="btn" onclick="validateForm()">Registrate</button>
+                <button type="button" class="btn">Registrate</button>
                 <button type="button" class="btn cancel" onclick="closeReg()">Close</button>
             </form>
         </div>

@@ -52,6 +52,34 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
+function validateEmail(){
 var x = document.getElementById('email').value;
-var y = /^[a-zA-Z0-9]{1,}@[a-zA-Z0-9]{1,}.[a-z]{2,10}$/;
-x.match(y);
+var y = /^([a-z0-9_#.-]+)@(([a-z0-9_#-]+\.)+[a-z]{2,5})$/;
+if (x.match(y)){
+  document.getElementById("d1").innerHTML="Correct";
+  document.getElementById("d1").style.color="green";
+}
+else {
+  document.getElementById("d1").innerHTML="Inorrect";
+  document.getElementById("d1").style.color="red";
+}
+}
+
+function validatePass(){
+ var x=document.getElementById("psw").value;
+ var y=/^[a-z]*$/;
+ var z=/^[a-z0-9]*$/;
+ var t=/^[a-z0-9A-Z]*$/
+ if (x.match(y)){
+  document.getElementById("d2").innerHTML="Easy"; 
+  document.getElementById("d2").style.color="blue";
+}
+else if (x.match(z)){
+  document.getElementById("d2").innerHTML="Medium"; 
+  document.getElementById("d2").style.color="yellow";
+}
+else if (x.match(t)){
+  document.getElementById("d2").innerHTML="Difficult"; 
+  document.getElementById("d2").style.color="#2dd613";
+}
+}
