@@ -235,23 +235,6 @@ div.desc
 
 
 /*-----form----*/
-.open-button
-{
-  background-color:black;
-  color:red;
-  float: left;
-  display:block;
-  text-align: center;
-  padding: 11px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  border:none;
-  margin:0;
- }
-.open-button:hover
-{
-  color:#ccc;
-}
 .form-popup {
   display: none;
   position: fixed;
@@ -348,6 +331,8 @@ div.desc
 /*-----formEnd----*/
 
 
+/*-----slider-----*/
+
 .wrapper
 {
   position: relative;
@@ -424,4 +409,10 @@ div.desc
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+
+.img-link{
+  position: relative;
+
 }

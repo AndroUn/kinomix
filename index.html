@@ -36,11 +36,11 @@
                     </div>
         <nav class="nav-menu">
             <ul class="ul-menu">
-                <li class="li-menu"><a class="a-menu" href="index.html">მთავარი</a></li>
-                <li class="li-menu"><a class="a-menu" href="#">ფილმები</a> </li>
-                <li class="li-menu"><a class="a-menu" href="#">მულთფილმები</a></li>
-                <li class="li-menu"><a class="a-menu" href="#">სიახლეები</a></li>
-                <li class="li-menu"><button class="open-button" onclick="openForm()">შესვლა</button></li>
+                <li class="li-menu"><a class="a-menu" href="index.html">HOME</a></li>
+                <li class="li-menu"><a class="a-menu" href="#">MOVIES</a> </li>
+                <li class="li-menu"><a class="a-menu" href="#">TVshows</a></li>
+                <li class="li-menu"><a class="a-menu" href="#">CARTOONS</a></li>
+                <li class="li-menu"><a class="a-menu" style="cursor: pointer;" onclick="openForm()">Sign In</a></li>
                 <li class="li-menu"><a><i class="fa fa-globe" aria-hidden="true"></i></a>
                     <ul class="ul-dropdown">
                         <li class="li-dropdown"><a class="a-dropdown" href="#">ENG</a></li>
@@ -49,7 +49,7 @@
                 </li>
             </ul>
             <div class="search-box">
-                <input class="search-txt" type="text" name="" placeholder="  ძებნა">
+                <input class="search-txt" type="text" name="" placeholder="  search">
                 <a class="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
             </div>
         </nav>
@@ -135,7 +135,7 @@
             <form class="form-container">
                 <h1>Login</h1>
                 <input type="text" placeholder="Email" name="email">
-                <input type="password" placeholder="პაროლი" name="psw">
+                <input type="password" placeholder="Password" name="psw">
                 <button type="submit" class="btn" value="submit">Login</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
                 <button type="button" class="reg-button" onclick="openReg()">Registracion</button>
@@ -146,12 +146,12 @@
                 <h1>Registracion</h1>
                 <input type="text" placeholder="Email" name="email" id="email" oninput="validateEmail()">
                 <p id="d1"></p>
-                <input type="text" placeholder="სახელი" name="username">
-                <input type="password" placeholder="პაროლი" name="psw" id="psw" oninput="validatePass()">
+                <input type="text" placeholder="Username" name="username">
+                <input type="password" placeholder="Password" name="psw" id="psw" oninput="validatePass()">
                 <p id="d2"></p>
-                <input type="password" placeholder="გაიმეორეთ პაროლი" name="psw" id="psw2">
+                <input type="password" placeholder="Confirm password" name="psw" id="psw2">
                 <p id="d3"></p>
-                <input type="text" placeholder="ქალაქი" name="town">
+                <input type="text" placeholder="City" name="town">
                 <button type="button" class="btn">Registrate</button>
                 <button type="button" class="btn cancel" onclick="closeReg()">Close</button>
             </form>
