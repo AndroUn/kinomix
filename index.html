@@ -36,15 +36,15 @@
                     </div>
         <nav class="nav-menu">
             <ul class="ul-menu">
-                <li class="li-menu"><a class="a-menu" href="index.html">HOME</a></li>
-                <li class="li-menu"><a class="a-menu" href="#">MOVIES</a> </li>
-                <li class="li-menu"><a class="a-menu" href="#">TVshows</a></li>
-                <li class="li-menu"><a class="a-menu" href="#">CARTOONS</a></li>
-                <li class="li-menu"><a class="a-menu" style="cursor: pointer;" onclick="openForm()">Sign In</a></li>
+                <li class="li-menu"><a class="a-menu lang" key="_home" href="index.html">HOME</a></li>
+                <li class="li-menu"><a class="a-menu lang" key="_movies" href="#">MOVIES</a> </li>
+                <li class="li-menu"><a class="a-menu lang" key="_shows" href="#">TVshows</a></li>
+                <li class="li-menu"><a class="a-menu lang" key="_cartoon" href="#">CARTOONS</a></li>
+                <li class="li-menu"><a class="a-menu lang" key="_sign" style="cursor: pointer;" onclick="openForm()">Sign In</a></li>
                 <li class="li-menu"><a><i class="fa fa-globe" aria-hidden="true"></i></a>
-                    <ul class="ul-dropdown">
-                        <li class="li-dropdown"><a class="a-dropdown" href="#">ENG</a></li>
-                        <li class="li-dropdown"><a href="a-dropdown">ქარ</a></li>
+                    <ul class="ul-dropdown" >
+                        <li class="li-dropdown"><a class="a-dropdown translate" id="eng">ENG</a></li>
+                        <li class="li-dropdown"><a class="a-dropdown translate" id="geo">ქარ</a></li>
                     </ul>
                 </li>
             </ul>
@@ -157,6 +157,8 @@
             </form>
         </div>
         <script src="script.js"></script>
+        <script src="lang.js"></script>
+        <script src="jquery.min.js"></script>
 </body>
 
 </html>

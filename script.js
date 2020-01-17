@@ -83,3 +83,12 @@ else if (x.match(t)){
   document.getElementById("d2").style.color="#2dd613";
 }
 }
+
+
+
+
+
+
+
+
+

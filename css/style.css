@@ -412,7 +412,6 @@ div.desc
 }
 
 
-.img-link{
-  position: relative;
-
+.a-dropdown{
+  cursor:pointer;
 }
