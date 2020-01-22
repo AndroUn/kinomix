@@ -1,18 +1,18 @@
 // Object literal behaving as multi-dictionary
 var arrLang = {
-    "eng": {
-        "_home": "HOME",
-        "_movies": "MOVIES",
-        "_shows": "TVshows",
-        "_cartoon": "CARTOONS",
-        "_sign": "Sign In"
+    'eng': {
+        'home': 'HOME',
+        'movies': 'MOVIES',
+        'shows': 'TVshows',
+        'cartoon': 'CARTOONS',
+        'sign': 'Sign In'
     },
-    "geo": {
-      "_home": "მთავარი",
-      "_movies": "ფილმები",
-      "_shows": "სერიალები",
-      "_cartoon": "მულტფილმები",
-      "_sign": "შესვლა"
+    'geo': {
+      'home': 'მთავარი',
+      'movies': 'ფილმები',
+      'shows': 'სერიალები',
+      'cartoon': 'მულტფილმები',
+      'sign': 'შესვლა'
     }
 };
 
